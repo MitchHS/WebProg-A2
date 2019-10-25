@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - u3100289_web_a2</title>
+    
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+       
+        <link rel="stylesheet" href="~/css/stylesheet.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+    </environment>
+</head>
+<body>
+    <nav class="navbar justify-content-center navbar-expand-lg mx-auto navbar-expand-md navbar-light " style="background-color:white;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationCollapse" aria-controls="navigationCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-center mx-auto" id="navigationCollapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="MachineLearning.html">Machine Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="DataVisualisation.html">Data Visualisation</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="WorldMap.html">World Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactAbout.html">Contact & About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="">
+        @RenderBody()
+        <hr />
+        <!-- Footer -->
+<footer class="page-footer font-small white" style=" margin-top:0px; background-color:white;">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        © 2018 u3100289 Copyright -
+        <a href="ContactAbout.html"> About -  </a>
+        <a href="https://www.facebook.com">
+            <img border="0" alt="facebook" src="~/images/f58.png" width="20" height="20">
+            </a> -
+            <a href="https://www.twitter.com">
+                <img border="0" alt="facebook" src="~/images/twitter.png" width="25" height="25">
+            </a>
+
+
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/script.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
