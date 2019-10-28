@@ -1,0 +1,228 @@
+﻿/*CSS Stylesheet*/
+
+body {
+   
+}
+
+#navigationCollapse {
+}
+ 
+.para {
+    background-image: url(/images/c.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.about {
+    text-align:center;
+    border-right: 2.5px solid grey;
+    height:20em;
+}
+
+.aboutContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    margin-top:1em;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+   
+    font-weight: bold; 
+    color:khaki;
+
+    
+}
+
+p1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: lightskyblue;
+    font-style:italic;
+}
+
+
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 4px;
+   
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top:10px;
+}
+
+    .button1:hover {
+        background-color: transparent;
+        color: white;
+    }
+    
+
+#q1
+{
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    
+    
+}
+
+.colBorder {
+    border: 10px solid black;
+    border-radius: 5px 30px 5px;
+    background-color: white;
+    text-align: center;
+    font-size: 8vw;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.readButton {
+
+}
+
+.imgBox {
+    
+    object-fit:cover;
+    padding:0px;
+    border:none;
+}
+
+
+#intro {
+    text-align: center;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+figcaption {
+    background: rgba(0, 0, 0, 0.0);
+    font-family: 'Open Sans', sans-serif;
+   
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    padding-top: 5px;
+    height:100%;
+    width: 100%;
+    font-size:1.5em;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+figure:hover > figcaption {
+    visibility: visible;
+}
+
+#intro h1 {
+    font-size: 10em; 
+    color:khaki;
+}
+
+#intro h2 {
+    font-style: italic; 
+    font-size:5em; 
+    color:white;
+}
+
+
+
+
+/*Media Queries*/
+@media only screen and (max-width: 991px) {
+    figcaption {
+        font-size:1em;
+    }
+
+    #intro h1{
+        font-size:2em;
+        color:khaki;
+    }
+
+    #intro h2 {
+        font-size:1.5em;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    figcaption {
+        font-size: 1em;
+    }
+
+    #intro h1 {
+        font-size: 2em;
+        color: khaki;
+    }
+
+    #intro h2 {
+        font-size: 1.5em;
+    }
+
+    figcaption h1 {
+        font-size: 2em;
+        color: khaki;
+    }
+
+    .about {
+        border:none;
+
+    }
+
+        .about h1 {
+
+            font-size:2em;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+
+#intro h1 {
+    font-size: 10em;
+}
+
+#intro h2 {
+    font-size: 3em;
+  
+}
+}
